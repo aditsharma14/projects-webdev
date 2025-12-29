@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us - Wander Recommendations</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a class="brand" href="index.html">Wander Recommendations</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input type="text" id="countryInput" placeholder="Enter country (e.g. Japan)">
+      <button id="btnCountrySearch">Search</button>
+    </div>
+  </nav>
+
+  <section class="section contact">
+    <h2>Contact Us</h2>
+    <p>If you have questions or want personalised recommendations, send us an email.</p>
+    <form id="contactForm">
+      <input type="email" id="email" placeholder="Your email" required>
+      <input type="text" id="subject" placeholder="Subject" required>
+      <textarea id="message" rows="6" placeholder="Message" required></textarea>
+      <button id="sendBtn" type="button">Send Email</button>
+    </form>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
