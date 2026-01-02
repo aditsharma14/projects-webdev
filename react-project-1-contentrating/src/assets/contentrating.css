@@ -1,0 +1,92 @@
+/* Page background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card container */
+.content-rating {
+  width: 340px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Content text */
+.content-rating p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* Buttons wrapper */
+.rating-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+/* Base button style */
+.rating-buttons button {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Like button */
+.like-button {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #0f3d2e;
+}
+
+.like-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(56, 249, 215, 0.4);
+}
+
+/* Dislike button */
+.dislike-button {
+  background: linear-gradient(135deg, #fa709a, #fee140);
+  color: #5a1a2e;
+}
+
+.dislike-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(250, 112, 154, 0.4);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
