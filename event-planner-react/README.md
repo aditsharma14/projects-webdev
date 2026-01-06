@@ -46,3 +46,9 @@ Card-based layout for clarity
 Smooth hover effects and transitions
 
 Fully responsive for mobile, tablet, and desktop
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
+Github:https://github.com/aditsharma14
+Linkedin:https://in.linkedin.com/in/adit-sharma-b5b37a313
