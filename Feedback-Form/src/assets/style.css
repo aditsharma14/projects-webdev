@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(135deg, #4a90e2, #0077b6);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Container */
+.form-submit {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.form-submit:hover {
+  transform: translateY(-3px);
+}
+
+/* Headings and Text */
+.form-submit h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-submit p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.form-submit input,
+.form-submit textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-submit input:focus,
+.form-submit textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+  outline: none;
+}
+
+/* Textarea */
+.form-submit textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.form-submit button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #0077b6, #0096c7);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-submit button:hover {
+  background: linear-gradient(135deg, #0096c7, #00b4d8);
+  transform: scale(1.03);
+}
+
+.form-submit button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-submit {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  nav {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+}
