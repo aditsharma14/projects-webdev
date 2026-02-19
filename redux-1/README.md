@@ -1,16 +1,74 @@
-# React + Vite
+# Redux Shopping Cart Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application built with Vite that demonstrates using Redux Toolkit to manage a shopping cart. The project includes a product list component and a shopping cart component. You can add products to the cart, increase or decrease quantities, remove items, and clear the cart.
 
-Currently, two official plugins are available:
+## 🛠️ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product list with add-to-cart buttons
+- Cart with item quantity controls
+- Total amount calculation
+- State management using Redux Toolkit and React-Redux hooks
+- Responsive, styled UI with hover effects and mobile support
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (v16+ recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository:
+   \`\`\`bash
+   git clone <repo-url> redux-1
+   cd redux-1
+   \`\`\`
+2. Install dependencies:
+   \`\`\`bash
+   npm install
+   # or yarn install
+   \`\`\`
+
+### Running the App
+
+Start the development server:
+
+\`\`\`bash
+npm run dev
+
+# or yarn dev
+
+\`\`\`
+
+Open your browser at `http://localhost:5173` (or the port shown in the terminal).
+
+## 📁 Project Structure
+
+\`\`\`
+src/
+├─ assets/
+│ ├─ cartslice.jsx # Redux slice for cart logic
+│ ├─ ShoppingCart.jsx # Cart UI component
+│ └─ product.jsx # Product list component
+├─ App.jsx # Root component
+├─ App.css # Styles
+├─ index.css # Global styles (empty)
+├─ main.jsx # React entry point
+└─ store.js # Redux store configuration
+\`\`\`
+
+## 📦 Redux Setup
+
+- `cartslice.jsx` defines reducers and actions for cart operations.
+- `store.js` configures the Redux store with the cart reducer.
+- `main.jsx` wraps the `<App />` inside a `<Provider>` passing the store.
+- Components use `useDispatch` and `useSelector` hooks to interact with state.
+
+## 🤝 Contributing
+
+Feel free to fork the repo and submit pull requests. Suggestions and improvements are welcome!
+
+## 📝 License
+
+This project is open source and free to use.
