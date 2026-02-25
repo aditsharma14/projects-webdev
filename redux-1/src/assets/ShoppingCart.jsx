@@ -25,19 +25,26 @@ const ShoppingCart = () => {
         <ul className="cart-items">
           {cartItems.map(item => (
             <li key={item.id} className="cart-item">
-              <span>{item.name} - ${item.price}</span>
+              <div className="cart-item-info">
+                {item.image && (
+                  <img src={item.image} alt={item.name} className="cart-item-image" />
+                )}
+                <span>{item.name} - ${item.price}</span>
+              </div>
               <div className="quantity-controls">
                 <button onClick={() => handleDecreaseQuantity(item.id)}>-</button>
                 <span> {item.quantity}</span>
                 <button onClick={() => handleIncreaseQuantity(item.id)}>+</button>
               </div>
-              <button className="remove-item-btn" onClick={() => handleRemoveItem(item.id)}>Remove</button>
+              <button className="remove-item-btn" onClick={() => handleRemoveItem(item.id)}>Remove ✖</button>
             </li>
           ))}
         </ul>
         <button className="clear-cart-btn" onClick={handleClearCart}>Clear Cart</button>
       </div>
-      <div>{totalAmount ? <div>The total amount is {totalAmount}</div> : ''}</div>
+      {totalAmount > 0 && (
+        <div className="total-amount">Total: ${totalAmount.toFixed(2)}</div>
+      )}
     </>
   )
 }
