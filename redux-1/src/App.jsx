@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductList from './assets/product.jsx';
-import ShoppingCart from './assets/shoppingcart.jsx';
+import ShoppingCart from './assets/ShoppingCart.jsx';
 import './App.css';
 
 function App() {
